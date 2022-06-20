@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <title>Calculator app</title>
+
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="top-bar">
+
+      <p class="app-name">calc</p>
+      <p class="theme">THEME</p>
+
+      <div class="toggler-indicator">
+
+        <div class="indicator">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+
+        <div class="toggle">
+          <input type="radio" name="toggle" value="t-1" class="theme-1" id="t-1" />
+          <label for="t-1">t-1</label>
+
+          <input type="radio" name="toggle" value="t-2" class="theme-2" id="t-2" />
+          <label for="t-2">t-2</label>
+
+          <input type="radio" name="toggle" value="t-3" class="theme-3" id="t-3" />
+          <label for="t-3">t-3</label>
+
+          <div class="selector">&nbsp;</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="input-field">
+    <h1></h1>
+    </div>
+
+    <div class="keys">
+      <button class="display-key pad-1">7</button>
+      <button class="display-key pad-1">8</button>
+      <button class="display-key pad-1">9</button>
+      <button  class="pad-1 data-delete">DEL</button>
+      <button class="display-key pad-1">4</button>
+      <button class="display-key pad-1">5</button>
+      <button class="display-key pad-1">6</button>
+      <button data-operation class="add pad-1">+</button>
+      <button class="display-key pad-1">1</button>
+      <button class="display-key pad-1">2</button>
+      <button class="display-key pad-1">3</button>
+      <button data-operation class="subtract pad-1">-</button>
+      <button class="display-key pad-1">.</button>
+      <button class="display-key pad-1">0</button>
+      <button data-operation class="divide pad-1">/</button>
+      <button data-operation class="multiply pad-1">x</button>
+      <button data-all-clear class="pad-1 reset-key">AC</button>
+      <button data-equals class="evaluate equal-key">=</button>
+    </div>
+
+  </main>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>

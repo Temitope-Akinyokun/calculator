@@ -1,0 +1,182 @@
+body {
+    background-color: hsl(0, 0%, 93%);
+    font-family: 'League Spartan', sans-serif;
+    padding: 4% 28%;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-right: 10px;
+}
+
+.toggle {
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 2px 0;
+    position: relative;
+    width: 80px;
+    background-color: hsl(0, 5%, 81%);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+
+    display: inline-block;
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.selector {
+    height: 20px;
+    width: 20px;
+    background: hsl(25, 98%, 40%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0.3px;
+    left: 2px;
+    z-index: 1;
+    transition: left 0.25s ease-in-out;
+}
+
+.theme-1:checked~.selector {
+    left: 2px;
+}
+
+.theme-2:checked~.selector {
+    left: 29px;
+}
+
+.theme-3:checked~.selector {
+    left: 55px;
+}
+
+
+.indicator {
+    display: flex;
+    width: 65px;
+    justify-content: space-between;
+    margin-left: 5px;
+    padding-left: 2px;
+    padding-right: 4px;
+}
+
+
+.top-bar {
+    display: flex;
+
+}
+
+.theme {
+    margin-left: auto;
+    margin-right: 25px;
+
+}
+
+.app-name {
+    font-size: 1.5rem;
+}
+
+.input-field {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 150px;
+    background-color: hsl(0, 0%, 90%);
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-style: none;
+    position: relative;
+    margin-bottom: 18px;
+    padding: 10px;
+}
+
+.keys {
+    background-color: hsl(0, 5%, 81%);
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.pad-1 {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-style: none;
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0 3px hsl(35, 11%, 61%);
+    padding: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.reset-key {
+    grid-column: 1/3;
+    background-color: hsl(185, 42%, 37%);
+    color: white;
+    box-shadow: 0 3px hsl(185, 58%, 25%);
+}
+
+.equal-key {
+    grid-column: 3/5;
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 3px hsl(25, 99%, 27%);
+    color: white;
+    border-style: none;
+}
+
+.delete-key {
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 3px hsl(185, 58%, 25%);
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 3px grey;
+    background: #FFF;
+    color: #000;
+}
+
+.previous-operand {
+    color: grey;
+    font-size: 1.2rem;
+}
+
+.current-operand {
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 620px) {
+    body {
+        padding: 3% 4%;
+    }
+}
